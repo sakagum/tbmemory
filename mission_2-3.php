@@ -19,13 +19,13 @@
 	 $comment=$_POST['comment'];
 	 $name=$_POST['name'];
 	 $date=date("Y/m/d H:i:s");
-	 $filename = "mission_2-1_sakakibara.txt";
+	 $filename = "mission_2-1.txt";
 	 $data=file_get_contents($filename);
 	 
 //コメントの投稿
  	  if(!empty($comment) && $name){		//$commentと$nameが空でなければ作動
 		$fp=fopen($filename,'a');
-		$contents=file("mission_2-1_sakakibara.txt");
+		$contents=file("mission_2-1.txt");
 		$cnt=count($contents);			//$contensの内容を5カウントする
 		$cnt++;					//１からカウントする
 		fwrite($fp, $cnt. "<>". $name. "<>". $comment. "<>". $date. "\n");
