@@ -15,20 +15,20 @@
 	 $comment=$_POST['comment'];
 	 $name=$_POST['name'];
 	 $date=date("Y/m/d H:i:s");
-	 $filename = "mission_2-1_sakakibara.txt";
+	 $filename = "mission_2-1.txt";
 	 
 	 
 	 
 
  	  if(!empty($comment) && $name){
 	  $fp=fopen($filename,'a');
-	  $contents=file("mission_2-1_sakakibara.txt");
+	  $contents=file("mission_2-1.txt");
 	  $cnt=count($contents);
 	  $cnt++;
 	  fwrite($fp, $cnt. '<>'. $name. '<>'. $comment. '<>'. $date. "\n");
 	  fclose($fp);}
 
-	   $file=fopen("mission_2-1_sakakibara.txt", "r");
+	   $file=fopen("mission_2-1.txt", "r");
 	   if($file){
 	   while($line = fgets($file)){
 	   $line = nl2br($line); 
