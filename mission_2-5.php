@@ -12,7 +12,7 @@
 	$pas=$_POST["pass"];
 
 	 $date=date("Y/m/d H:i:s");
-	 $filename = "mission_2-5_sakakibara.txt";
+	 $filename = "mission_2-5.txt";
 	 $data=file_get_contents($filename);
 	 $file=file($filename);
 	 $filep=file($filename);
