@@ -13,7 +13,7 @@
     if(isset($_POST['comment']) && $_POST['comment']){
     $comment=$_POST['comment'];
 
-    $filename = 'mission_1-5_sakakibara.txt';
+    $filename = 'mission_1-5.txt';
     $fp = fopen($filename,'w');
     if($comment=="犬"){
     fwrite($fp, $comment);
