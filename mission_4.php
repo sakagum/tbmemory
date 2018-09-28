@@ -52,7 +52,7 @@ $count = (int)$pdo->query($sql)->fetchColumn();
 var_dump($count); 
 
 
-//コメントの追加 datetimeがあるから、何も書き入れられない
+//コメントの追加
 if(!empty($_POST["name"]) && $_POST["comment"] && $_POST["pass"]){
 if(empty($_POST["hidd"])){
 	$sql = $pdo -> prepare("INSERT INTO sae (id,name,comment,da,pass) VALUES (:id,:name,:comment,:da,:pass)");
