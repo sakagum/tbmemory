@@ -14,12 +14,12 @@
 			 if(isset($_POST['comment']) && $_POST['comment']){
 			 $comment=$_POST['comment'];
 				
-				$filename = 'mission_1-6_sakakibara.txt';
+				$filename = 'mission_1-6.txt';
 				$fp = fopen($filename,'a');
 				fwrite($fp, $comment. "\n");
 				fclose($fp);}
 				
-					$file=fopen("mission_1-6_sakakibara.txt", "r");
+					$file=fopen("mission_1-6.txt", "r");
 					if($file){
 					 while($line = fgets($file)){
 					 $line = nl2br($line); 
