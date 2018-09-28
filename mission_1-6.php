@@ -14,7 +14,7 @@
 			 if(isset($_POST['comment']) && $_POST['comment']){
 			 $comment=$_POST['comment'];
 				
-				$filename = 'mission_1-6_sakakibara.txt';
+				$filename = 'mission_1-6.txt';
 				$fp = fopen($filename,'a');
 				fwrite($fp, $comment. "\n");
 				fclose($fp);}
