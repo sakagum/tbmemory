@@ -10,7 +10,7 @@
 	 $comment=$_POST['comment'];
 	 $name=$_POST['name'];
 	 $date=date("Y/m/d H:i:s");
-	 $filename = "mission_2-1_sakakibara.txt";
+	 $filename = "mission_2-1.txt";
 	 $data=file_get_contents($filename);
 	 $file=file($filename);
 	 
